@@ -1,0 +1,203 @@
+/* CSS GENERAL */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; 
+}
+
+/* index */
+
+header {
+    text-align: center;
+    background-color: #21515b;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+header div h1 a {
+    color: #e2e2ae;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header div h2 a {
+    width: auto;
+    height: 40%;
+    color: #e2e2ae;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+header div img {
+    display: inline-flex;
+    max-width: 100px;
+    max-height: auto;
+
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li a {
+    margin: 0 10px;
+    padding: 10px;
+    border: 2px inset black;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #e2e2ae;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all 1s;
+}
+
+header nav ul li a:hover {
+    border: 2px outset white;
+    background-color: #e9dfa7;
+    width: 100px;
+    color: black;
+}
+
+main {
+    color: white;
+    text-align: center;
+    background-color: #8FCFC1;
+    padding: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+
+main section {
+    text-align: center;
+    display: table;
+    margin: 5px auto;
+    color: black;
+    background-color: #e4ddb3;
+
+}
+
+main section table {
+    border: 3px solid black;
+    border-spacing: 4px;
+}
+
+.gridMain {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+main section table tr td {   
+    border: 1px outset black;
+    background-color: #d9c87f;/*  #8fcfc1;  */
+    padding: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer {
+    background-color: #e4ddb3;
+    color: black;
+    text-align: center;
+    margin-top: 300px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 10px;
+}
+
+.titulos {
+    font-family:'Raleway', sans-serif;
+    text-decoration: underline;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+/* contacto */
+
+.ubicacion {
+    border-bottom: 2px solid black;
+    background-color: #e9dfa7;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+main form {
+    margin: 10px;
+}
+
+main form div {
+    margin: 10px;
+}
+
+main ul li {
+    padding: 2px;
+}
+
+/* carreras */
+
+.grid-carreras {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.grid-carreras img {
+    width: 100%;
+
+}
+
+.grid-carreras:hover .carreras {
+    color: black;
+    visibility: hidden;
+}
+
+.texto {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+
+/* grids de index */
+
+.container {
+    display: flex;
+    
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-auto-rows: 150px; */
+    padding: 20px;
+    background-color: #8FCFC1;
+}
+
+.gallery--img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery--item:nth-child(2) {
+    grid-row-start: span 2;
+}
+

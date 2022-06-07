@@ -1,0 +1,329 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* MOBILE */
+
+#grid-area {
+    display: grid;
+    grid-template-areas:
+        "logo logo logo"
+        "menu menu menu"
+        "main main main"
+        "footer footer footer";
+}
+
+header {
+    text-align: center;
+    gap: 10px;
+    background-color: #21515b;
+    margin-top: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    grid-area: logo;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+header div h1 a {
+    color: #e2e2ae;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+header div h2 a {
+    width: auto;
+    height: 40%;
+    color: #e2e2ae;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.nav {
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #21515b;
+    margin-top: 0;
+    height: auto;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    display: flex;
+    margin: 0 10px;
+    padding: 10px;
+    border: 2px inset black;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #e2e2ae;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all 1s;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main {
+    color: white;
+    text-align: center;
+    background-color: #8FCFC1;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 100%;
+    width: 100%;
+    grid-area: main;
+}
+
+main section {
+    text-align: center;
+    display: table;
+    margin: 5px auto;
+    color: black;
+    background-color: #e4ddb3;
+}
+
+main section table {
+    border: 3px solid black;
+    border-spacing: 4px;
+}
+
+
+main section table tr td {
+    border: 1px outset black;
+    background-color: #d9c87f;
+    padding: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer {
+    background-color: #e4ddb3;
+    color: black;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    grid-area: footer;
+}
+
+.titulos {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: underline;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+/* contacto */
+
+.datos {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 15px;
+}
+
+.ubicacion {
+    background-color: #8FCFC1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 50%;
+    height: auto;
+}
+
+main form {
+    margin: 10px;
+}
+
+main form div {
+    margin: 10px;
+}
+
+main ul li {
+    padding: 2px;
+}
+
+/* carreras */
+
+.grid-carreras {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.grid-carreras img {
+    width: 100%;
+
+}
+
+.texto {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+
+/* grids de index */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    background-color: #8FCFC1;
+}
+
+.gallery--img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery--item .gallery--img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery--item {
+    height: auto;
+    width: 100%;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 600px) {
+    #grid-area {
+        display: grid;
+        grid-template-areas:
+            "logo logo logo"
+            "menu menu menu"
+            "main main main"
+            "footer footer footer";
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header div {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+    nav ul li a {
+        margin: 0 10px;
+        padding: 10px;
+        border: 2px inset black;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #e2e2ae;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transition: all 1s;
+    }
+
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1020px) {
+    #grid-area {
+        display: grid;
+        grid-template-areas:
+            "logo logo logo"
+            "menu menu menu"
+            "main main main"
+            "footer footer footer";
+    }
+
+    nav ul li:hover {
+        transform: scale(1.1, 1.1);
+        transition: all 0.3s;
+    }
+
+    nav ul li a:hover {
+        border: 2px outset white;
+        background-color: #e9dfa7;
+        color: black;
+    }
+
+    .ubicacion {
+        background-color: #8FCFC1;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .container {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+        background-color: #8FCFC1;
+    }
+    
+    .gallery--img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .gallery--item:nth-child(2) {
+        grid-row-start: span 2;
+    }
+
+}
