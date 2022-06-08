@@ -112,7 +112,7 @@ main {
     grid-area: main;
 }
 
-main section {
+/* main section {
     text-align: center;
     display: table;
     margin: 5px auto;
@@ -131,7 +131,7 @@ main section table tr td {
     background-color: #d9c87f;
     padding: 3px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+} */
 
 footer {
     background-color: #e4ddb3;
@@ -153,6 +153,10 @@ footer p {
     margin: 5px;
     display: flex;
     justify-content: center;
+    color: black;
+}
+
+.letras {
     color: black;
 }
 
@@ -178,13 +182,13 @@ footer p {
     height: auto;
 }
 
-main form {
+/* main form {
     margin: 10px;
 }
 
 main form div {
     margin: 10px;
-}
+} */
 
 main ul li {
     padding: 2px;

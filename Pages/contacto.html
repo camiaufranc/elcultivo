@@ -53,7 +53,69 @@
         </div>
     
 
-    <form>
+        <form class="row g-3">
+            <div class="col-md-4">
+              <label for="validationServer01" class="form-label letras">Nombre</label>
+              <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+              <div class="valid-feedback">
+                Correcto!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationServer02" class="form-label letras">Apellido</label>
+              <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+              <div class="valid-feedback">
+                Correcto!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationServerEmail" class="form-label letras">Email</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend3"></span>
+                <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                  Por favor, ingresa tu email.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationServer03" class="form-label letras">Provinica</label>
+              <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+              <div id="validationServer03Feedback" class="invalid-feedback">
+                Por favor, ingresa una Provincia.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationServer04" class="form-label letras">Localidad</label>
+              <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                <option selected disabled value="">Elegir...</option>
+                <option>CABA</option>
+                <option>Cañuelas</option>
+                <option>Canning</option>
+                <option>Cutralcó</option>
+              </select>
+              <div id="validationServer04Feedback" class="invalid-feedback">
+                Por favor, ingresa una Localidad.
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                <label class="form-check-label letras" for="invalidCheck3">
+                  Acepto términos y condiciones.
+                </label>
+                <div id="validationServer04Feedback" class="letras">
+                  Estaras de acuerdo despues de enviar.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+          </form>
+
+
+    <!-- <form>
 
         <div class="texto">
             <label for="nombre">Nombre: </label>
@@ -108,7 +170,7 @@
             <input type="submit" value="Enviar ahora">
             <input type="reset" value="Borrar todo">
             
-    </form>
+    </form> -->
 
     <div class="ubicacion">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3266.5516265071083!2d-58.75423928517934!3d-35.042945288376195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd1ffce6a38a81%3A0xb82d14c0d1087081!2sEL%20CULTIVO%20REST%C3%93!5e0!3m2!1ses-419!2sar!4v1651267632121!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
