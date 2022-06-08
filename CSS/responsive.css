@@ -60,8 +60,7 @@ header div {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background: rgb(33,81,91);
-    background: linear-gradient(90deg, rgba(33,81,91,1) 88%, rgba(0,0,0,1) 100%);
+    background: #21515b;
     margin-top: 0;
     height: auto;
     width: 100%;
@@ -285,7 +284,8 @@ main ul li {
     #grid-area {
         display: grid;
         grid-template-areas:
-            "logo menu menu"
+            "logo logo logo"
+            "menu menu menu"
             "main main main"
             "footer footer footer";
     }
