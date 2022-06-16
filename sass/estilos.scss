@@ -21,7 +21,7 @@
 header {
         text-align: center;
         gap: 10px;
-        background: #21515b;
+        background: $colorHeader;
         background: -webkit-gradient(linear, left bottom, left top, color-stop(51%, #21515b), to(black));
         background: linear-gradient(360deg, #21515b 51%, black 100%);
         margin-top: 0;
@@ -81,7 +81,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background: #21515b;
+    background: $colorHeader;
     margin-top: 0;
     height: auto;
     width: 100%;
@@ -117,7 +117,7 @@ header {
 main {
     color: white;
     text-align: center;
-    background-color: #8FCFC1;
+    background-color: $colorMain;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -163,7 +163,7 @@ footer {
 }
 
 .ubicacion {
-    background-color: #8FCFC1;
+    background-color: $colorMain;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -260,10 +260,10 @@ footer {
     }
 
     .ubicacion {
-        background-color: #8FCFC1;
+        background-color: $colorMain;
         display: flex;
         justify-content: space-evenly;
-        align-content: center;
+        align-content: map-get($estilos, centro);
         flex-wrap: nowrap;
         flex-direction: row-reverse;
         align-items: center;
@@ -275,7 +275,7 @@ footer {
         grid-gap: 10px;
         grid-template-columns: repeat(2, 1fr);
         padding: 20px;
-        background-color: #8FCFC1;
+        background-color: $colorMain;
     }
 
     .gallery--img {
