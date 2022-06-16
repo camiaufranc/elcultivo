@@ -2,88 +2,96 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML</title>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="./sass/estilos.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Sitio web oficial de El Cultivo Arte, Escuela de Música y Teatro. ¡Aquí podrás encontrar los cursos y carreras que tenemos para ofrecerte, como inscribirte, nuestra historia y mucho más!">
+  <meta name="keywords"
+    content="ESCUELA, MÚSICA, TEATRO, CAÑUELAS, ARTE, CURSOS, CARRERAS, CLASES, CANTO, GUITARRA, PIANO, BATERÍA">
+  <title>HTML</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="./sass/estilos.css">
 </head>
 
 <body>
 
-    <div id="grid-area">
-        <header>
-            <div class="logo">           
-                      <!-- <a class="navbar-brand" href="./index.html">
+  <div id="grid-area">
+    <header>
+      <div class="logo">
+        <!-- <a class="navbar-brand" href="./index.html">
                         <img src="./Images/El_Cultivo_arte.png" alt="" width="50%" height="auto">
                       </a>       -->
-                <h1 class="animate__animated animate__bounce"><a class="elcultivo1" href="./index.html">El Cultivo Arte</a></h1>
-                <h2 class="animate__animated animate__bounce"><a class="elcultivo2" href="./index.html">Escuela de Música y Teatro</a></h2>
+        <h1 class="animate__animated animate__bounce"><a class="elcultivo1" href="./index.html">El Cultivo Arte</a></h1>
+        <h2 class="animate__animated animate__bounce"><a class="elcultivo2" href="./index.html">Escuela de Música y
+            Teatro</a></h2>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg nav">
+      <div class="container-fluid nav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="./Pages/carreras.html">Carreras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./Pages/inscripcion.html">Inscripción</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./Pages/historia.html">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./Pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <main class="gridMain">
+
+      <div>
+        <h2 class=" titulos animate__animated animate__zoomInDown">¡Nuestros alumnos!</h2>
+      </div>
+      <div class="container">
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./Images/DSC_5259.jpg" class="d-block w-100 imagen" alt="mamayguille">
             </div>
-        </header>
-
-        <nav class="navbar navbar-expand-lg nav">
-            <div class="container-fluid nav">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse nav" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item" >
-                    <a class="nav-link active" href="./Pages/carreras.html">Carreras</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="./Pages/inscripcion.html">Inscripción</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="./Pages/historia.html">Historia</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="./Pages/contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+            <div class="carousel-item">
+              <img src="./Images/DSC_5470.jpg" class="d-block w-100" alt="garcia">
             </div>
-          </nav>
-
-
-        <main class="gridMain">
-
-            <div>
-                <h2 class=" titulos animate__animated animate__zoomInDown">¡Nuestros alumnos!</h2>
+            <div class="carousel-item">
+              <img src="./Images/DSC_5497.jpg" class="d-block w-100" alt="pianofeli">
             </div>
-            <div class="container">
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
 
-                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./Images/DSC_5259.jpg" class="d-block w-100 imagen" alt="mamayguille">
-                      </div>                      
-                      <div class="carousel-item">
-                        <img src="./Images/DSC_5470.jpg" class="d-block w-100" alt="garcia">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./Images/DSC_5497.jpg" class="d-block w-100" alt="pianofeli">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-            
-            
-            <!-- <div class="container">
+
+      <!-- <div class="container">
                 <div class="gallery--item">
                     <img class="gallery--img" src="./Images/DSC_5259.jpg" alt="horizontalVir">
                 </div>
@@ -96,67 +104,69 @@
             </div> -->
 
 
-            <div>
-                <p class="texto titulos">¡Encontranos en los siguientes horarios!</p>
-            </div>
+      <div>
+        <p class="texto titulos">¡Encontranos en los siguientes horarios!</p>
+      </div>
 
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Mañana</th>
-                    <th scope="col">Tarde</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">Lunes</th>
-                    <td>9:00hs a 12:00hs</td>
-                    <td>15:00hs a 20:00hs</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Martes</th>
-                    <td>9:00hs a 12:00hs</td>
-                    <td>15:00hs a 20:00hs</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Miércoles</th>
-                    <td>9:00hs a 12:00hs</td>
-                    <td>15:00hs a 20:00hs</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Jueves</th>
-                    <td>9:00hs a 12:00hs</td>
-                    <td>15:00hs a 20:00hs</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Viernes</th>
-                    <td>9:00hs a 12:00hs</td>
-                    <td>15:00hs a 20:00hs</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Sábado</th>
-                    <td>9:00hs a 12:00hs</td>
-                    <td>Sin actividad :(</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Domingo</th>
-                    <td>Sin actividad :(</td>
-                    <td>Sin actividad :(</td>
-                  </tr>
-                
-                </tbody>
-              </table>
-        </main>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Mañana</th>
+            <th scope="col">Tarde</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Lunes</th>
+            <td>9:00hs a 12:00hs</td>
+            <td>15:00hs a 20:00hs</td>
+          </tr>
+          <tr>
+            <th scope="row">Martes</th>
+            <td>9:00hs a 12:00hs</td>
+            <td>15:00hs a 20:00hs</td>
+          </tr>
+          <tr>
+            <th scope="row">Miércoles</th>
+            <td>9:00hs a 12:00hs</td>
+            <td>15:00hs a 20:00hs</td>
+          </tr>
+          <tr>
+            <th scope="row">Jueves</th>
+            <td>9:00hs a 12:00hs</td>
+            <td>15:00hs a 20:00hs</td>
+          </tr>
+          <tr>
+            <th scope="row">Viernes</th>
+            <td>9:00hs a 12:00hs</td>
+            <td>15:00hs a 20:00hs</td>
+          </tr>
+          <tr>
+            <th scope="row">Sábado</th>
+            <td>9:00hs a 12:00hs</td>
+            <td>Sin actividad :(</td>
+          </tr>
+          <tr>
+            <th scope="row">Domingo</th>
+            <td>Sin actividad :(</td>
+            <td>Sin actividad :(</td>
+          </tr>
 
-        <footer id=pie>
-            <p>Instagram: elcultivoarte || Facebok: El Cultivo Arte</p>
-        </footer>
+        </tbody>
+      </table>
+    </main>
 
-    </div>
+    <footer id=pie>
+      <p>Instagram: elcultivoarte || Facebok: El Cultivo Arte</p>
+    </footer>
 
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </div>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
