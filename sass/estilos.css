@@ -19,9 +19,10 @@
 header {
   text-align: center;
   gap: 10px;
-  background: #21515b;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(51%, #21515b), to(black));
-  background: linear-gradient(360deg, #21515b 51%, black 100%);
+  background-color: black;
+  /* background: #21515b; */
+  /* background: -webkit-gradient(linear, left bottom, left top, color-stop(51%, #21515b), to(black));
+  background: linear-gradient(360deg, #21515b 51%, black 100%); */
   margin-top: 0;
   padding: 10px;
   display: -webkit-box;
@@ -92,7 +93,8 @@ header div {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
-  background: #21515b;
+  /* background: #21515b; */
+  background: black;
   margin-top: 0;
   height: auto;
   width: 100%;
@@ -121,13 +123,13 @@ header div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 10px;
+  /* margin: 0 10px; */
   padding: 10px;
-  border: 2px inset black;
-  border-radius: 10px;
+  /* border: 2px inset black;
+  border-radius: 10px; */
   text-decoration: none;
-  color: #e2e2ae;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
   -webkit-transition: all 1s;
   transition: all 1s;
   -ms-flex-wrap: nowrap;
@@ -145,6 +147,7 @@ header div {
       -ms-flex-align: center;
           align-items: center;
 }
+
 
 main {
   color: white;
@@ -258,8 +261,8 @@ footer p {
 }
 
 .texto {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: black;
+  font-family: 'Open Sans', sans-serif;
+  
 }
 
 /* TABLET */
@@ -320,10 +323,43 @@ footer p {
   #grid-area {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "logo logo logo"
- "menu menu menu"
+        grid-template-areas: "logo menu menu"
  "main main main"
  "footer footer footer";
   }
+
+  .navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.nav-ul-li:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 0.3s;
+}
+/* .nav-ul-li a:hover {
+  border: 2px outset white;
+  background-color: #E5E5E5;
+  color: black;
+} */
+
+.elcultivo1:hover {
+    color: #e2e2ae;
+}
+
+.elcultivo2:hover {
+    color: #e2e2ae;
+}
+
+.container {
+        /* margin: auto; */
+        width: 55%;
+        height: auto;
+        margin-top: 20px;
+        /* padding: 40px; */
+}
 }
 /*# sourceMappingURL=estilos.css.map */
