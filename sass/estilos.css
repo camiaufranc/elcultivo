@@ -46,6 +46,52 @@ header {
           flex-direction: column;
 }
 
+
+#grid-seminarios {
+  display: grid;
+  grid-template-areas: 
+  "imagen"
+  "descripcion";
+}
+
+.math {
+  width: 60%;
+  height: auto;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+
+.mateoCamilo {
+  width: 60%;
+  height: auto;
+  margin-top: 30px;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+.acomodando {
+  font-size: 20px;
+  padding: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+.acomodando2 {
+  margin: 30px;
+}
+
+.navbar-toggler {
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: var(--bs-navbar-color);
+  background-color: #e4ddb3;
+  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+  border-radius: var(--bs-navbar-toggler-border-radius);
+  transition: var(--bs-navbar-toggler-transition);
+}
+
 header div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,6 +221,15 @@ main {
   grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: main;
+}
+
+.container {
+  margin-top: 15px;
+}
+
+.acomodando3 {
+  font-family: 'Roboto', sans-serif;
+  color: black;
 }
 
 footer {
@@ -360,6 +415,82 @@ footer p {
         height: auto;
         margin-top: 20px;
         /* padding: 40px; */
+}
+
+#grid-seminarios {
+  display: grid;
+  grid-template-areas: 
+  "imagen descripcion";
+}
+
+.math {
+  border-radius: 15px;
+  display: flex;
+  /* margin-left: 50px; */
+  width: 45%;
+  height: auto;
+  align-items: left;
+  grid-area: imagen;
+  margin-top: 10px;
+}
+
+.imagenDescribida {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: center;
+}
+
+.descripcionSeminario {
+  display: flex;
+  text-align: left;
+  grid-area: descripcion;
+}
+
+.acomodando {
+  text-align: left;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column-reverse;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  font-size: 20px;
+  color: black;
+}
+
+#grid-seminarios2 {
+  display: grid;
+  grid-template-areas: 
+  "descripcion2 imagen2";
+}
+
+.mateoCamilo {
+  border-radius: 15px;
+  display: flex;
+  /* margin-left: 50px; */
+  width: 60%;
+  height: auto;
+  align-items: right;
+  grid-area: imagen2;
+}
+
+.imagenDescribida2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: center;
+}
+
+.descripcionSeminario2 {
+  display: flex;
+  text-align: left;
+  grid-area: descripcion2;
+}
+
+.seminarios {
+  margin: 50px;
 }
 }
 /*# sourceMappingURL=estilos.css.map */
